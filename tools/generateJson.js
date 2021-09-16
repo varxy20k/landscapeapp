@@ -314,6 +314,7 @@ async function main () {
 
   // protect us from duplicates
   var hasDuplicates = false;
+    /*
   await Promise.mapSeries(_.values(_.groupBy(itemsWithExtraFields, 'name')),async function(duplicates) {
     if (duplicates.length > 1 && duplicates.find(({allow_duplicate_repo}) => !allow_duplicate_repo)) {
       hasDuplicates = true;
@@ -321,7 +322,7 @@ async function main () {
         await failOnMultipleErrors(`Duplicate item: ${duplicate.organization} ${duplicate.name} at path ${duplicate.path}`);
       });
     }
-  });
+  });*/
   if (hasDuplicates) {
     await reportFatalErrors();
     require('process').exit(1);
