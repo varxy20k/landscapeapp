@@ -327,7 +327,10 @@ html.embed body {
 }
 
 .oss img {background: white;}
-.nonoss img {background: #E4E4E4;}
+.nonoss img {background: #E4E4E4; }
+
+/*.oss img {background: lightgreen;}
+.nonoss img {background: red;}*/
 
 .mosaic {
   width: 100%; cursor: pointer; position: relative; border-radius: 2px;
